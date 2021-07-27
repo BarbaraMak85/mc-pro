@@ -1,0 +1,26 @@
+.home_container {
+  background-image: url("../../assets/images/line_1.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.home_image {
+  width: 70%;
+  background-image: url("../../assets/images/ZdjGł_MCpro.png");
+  background-origin: content-box;
+  background-size: 168%;
+  background-position: 28% 41%;
+  background-repeat: no-repeat;
+}
+.home_content {
+  width: 30%;
+  padding-top: 400px;
+  display: grid;
+  justify-content: center;
+}
