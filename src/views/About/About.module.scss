@@ -1,0 +1,48 @@
+.wrapperAbout {
+  display: grid;
+  height: 650px;
+}
+
+.aboutImage {
+  height: 814px;
+  background-image: url("../../assets/images/patrycjagrabarska.png");
+  margin-top: -180px;
+  background-repeat: no-repeat;
+}
+.aboutContent {
+  display: grid;
+  grid-template-columns: 39% 22%;
+  justify-content: center;
+}
+.aboutText {
+  margin-top: -60px;
+}
+.aboutName {
+  font-family: "Gelasio", serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #a6263e;
+}
+.aboutSurname {
+  font-family: "Gelasio", serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #a6263e;
+  margin-left: 80px;
+}
+.aboutImageLine {
+  height: 683px;
+  display: grid;
+  background-image: url("../../assets/images/line_4.png");
+  background-repeat: no-repeat;
+  margin-top: -542px;
+  width: 100%;
+  background-position: 100% 11%;
+}
+.abautParagraph {
+  font-family: "Montserrat", serif;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: #23242a;
+}

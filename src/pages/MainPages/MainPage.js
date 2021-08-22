@@ -4,6 +4,7 @@ import About from "../../views/About/About";
 import Contact from "../../views/Contact/Contact";
 import Navbar from "../../components/navigations/Navbar/Navbar";
 import Home from "../../views/Home/Home";
+import styles from "./MainPages.module.scss";
 class MainPage extends Component {
   render() {
     return (

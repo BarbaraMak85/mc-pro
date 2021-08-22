@@ -1,6 +1,6 @@
 .home_container {
   background-image: url("../../assets/images/line_1.png");
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: 100% 0%;
@@ -14,13 +14,42 @@
   width: 70%;
   background-image: url("../../assets/images/ZdjGł_MCpro.png");
   background-origin: content-box;
-  background-size: 168%;
-  background-position: 28% 41%;
+
+  background-size: 138%;
+  background-position: 6% 0%;
   background-repeat: no-repeat;
+  height: 1200px;
 }
 .home_content {
   width: 30%;
   padding-top: 400px;
   display: grid;
   justify-content: center;
+  grid-template-rows: 13% 23%;
+  margin-left: 35px;
+}
+.titleHome {
+  margin-left: 117px;
+}
+.homeParagraph {
+  margin-left: 202px;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #23242a;
+}
+
+.homeParagraphContact {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  margin-left: 202px;
+  letter-spacing: -0.015em;
+
+  color: #a6263e;
 }

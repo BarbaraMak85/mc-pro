@@ -1,0 +1,46 @@
+.boxWrapper {
+  align-self: center;
+}
+.boxList {
+  width: 340px;
+  height: 400px;
+  list-style: none;
+  top: 1320px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #a6263e;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #23242a;
+}
+
+.boxLine {
+  border: 1px solid #a6263e;
+}
+.boxParagraphTitle {
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.boxParagraphContent {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 17px;
+
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+// }
