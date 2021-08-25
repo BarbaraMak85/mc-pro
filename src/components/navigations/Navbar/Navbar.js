@@ -14,7 +14,7 @@ const Navbar = () => {
           className
           activeClass={styles.active}
           className={styles.naviagtionList__element}
-          to="logo"
+          to="home"
           spy={true}
           smooth={true}
           offset={0}
