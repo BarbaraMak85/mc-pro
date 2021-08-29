@@ -20,6 +20,11 @@
   background-repeat: no-repeat;
   height: 1200px;
 }
+@media (max-width: 768px) {
+  .home_container {
+    height: auto;
+  }
+}
 
 @media (max-width: 424px) {
   .home_image {
@@ -51,8 +56,9 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 25px;
+  margin-top: -27px;
   color: #23242a;
+  line-height: 25px;
 }
 
 .homeParagraphContact {
@@ -60,8 +66,8 @@
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 30px;
-
+  line-height: 25px;
+  cursor: pointer;
   margin-left: 202px;
   letter-spacing: -0.015em;
 

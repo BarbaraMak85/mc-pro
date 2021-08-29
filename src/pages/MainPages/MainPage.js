@@ -6,6 +6,7 @@ import Contact from "../../views/Contact/Contact";
 import Navbar from "../../components/navigations/Navbar/Navbar";
 import Home from "../../views/Home/Home";
 import styles from "./MainPages.module.scss";
+import ImginesSlider from "../../components/Slider/Slider";
 
 class MainPage extends Component {
   render() {
@@ -23,7 +24,9 @@ class MainPage extends Component {
         <div id="about">
           <About />
         </div>
-
+        <div>
+          <ImginesSlider />
+        </div>
         <div id="contact">
           <Contact />
         </div>

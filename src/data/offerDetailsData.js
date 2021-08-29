@@ -14,4 +14,9 @@ export const offerDetailsData = [
     contentOffer:
       " Prowadzisz aktywnie konta w mediach społecznościowych? Jesteś wydawcą portalu? Nie wiesz lub nie masz czasu na ustalanie szczegółów współpracy  reklamodawcami? My zrobimy to za Ciebie. Pomożemy w tworzeniu ofert oraz skoordynujemy Twoje kampanie.",
   },
+  {
+    titleOffer: "Prowadzenie projektów reklamowych",
+    contentOffer:
+      " Nie znalazłeś(aś) tego czego potrzebujesz? Porozmawiajmy! Chętnie poznamy Ciebie i Twoje potrzeby. Być może nie wiesz jak ułożyć całościowo działania? Jeżeli tak, to pomożemy Ci w tym obszarze.",
+  },
 ];

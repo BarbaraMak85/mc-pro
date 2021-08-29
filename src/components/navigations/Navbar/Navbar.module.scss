@@ -3,6 +3,9 @@
   grid-template-columns: 70% 30%;
   position: fixed;
   width: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+  z-index: 999999999;
 }
 
 .navigationList__wrapper {
@@ -30,6 +33,7 @@
 .navigationList__wrapper {
   text-decoration: none;
   justify-self: center;
+  align-self: center;
 }
 
 .imgNavbar {
@@ -44,4 +48,29 @@
 .imgNavigations {
   display: grid;
   justify-content: start;
+}
+.navbarBtn {
+  visibility: hidden;
+}
+.navbarList {
+  list-style: none;
+}
+@media (max-width: 680px) {
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: red;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  .navbarBtn {
+    visibility: visible ;
+  }
+}
+
+.visible {
+  left: 0;
 }

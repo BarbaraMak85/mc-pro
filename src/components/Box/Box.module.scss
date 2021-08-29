@@ -1,5 +1,6 @@
 .boxWrapper {
-  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 .boxList {
   width: 340px;
@@ -44,3 +45,32 @@
   color: #ffffff;
 }
 // }
+@media (max-width: 1200px) {
+  .boxParagraphTitle {
+    font-size: 12px;
+  }
+  .boxList {
+    width: 274px;
+    height: 341px;
+  }
+  .boxParagraphContent {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .boxList {
+    width: 340px;
+    height: 400px;
+  }
+  .boxParagraphTitle {
+    font-size: 16px;
+  }
+  .boxParagraphContent {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .boxList {
+  }
+}

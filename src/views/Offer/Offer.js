@@ -1,17 +1,62 @@
 import React from "react";
+
 import styles from "./Offer.module.scss";
 import LineOne from "../../assets/images/line_2.png";
 import LineTwo from "../../assets/images/line_3.png";
 import Box from "../../components/Box/Box";
 import { offerDetailsData } from "../../data/offerDetailsData";
+import Slider from "react-slick";
+// import sliderStyles from "../../components/Slider/Slider.module.scss";
 
 const Offer = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    useCSS: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
   return (
     <div className={styles.offerWrapper}>
+      <h1 className={styles.aboutName}>Oferta</h1>
+      <p className={styles.homeParagraph}>
+        Mamy kilkuletnie doświadczenie w realizacji kampanii marketingowych.
+        Cenimy sobie czas naszych klientów, dlatego stawiamy na szybkość i
+        skuteczność działania oraz na mierzalne efekty.
+      </p>
+
       <div className={styles.offerWrapperLine}>
         <div className={styles.offerWrapperLineTwo}>
           <div className={styles.box}>
-            <ul className={styles.offerBox}>
+            {/* <ul className={styles.offerBox}> */}
+            <Slider {...settings}>
               {offerDetailsData.map((item) => {
                 return (
                   <div>
@@ -19,7 +64,8 @@ const Offer = () => {
                   </div>
                 );
               })}
-            </ul>
+            </Slider>
+            {/* </ul> */}
           </div>
         </div>
       </div>

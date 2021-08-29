@@ -37,12 +37,49 @@
   background-repeat: no-repeat;
   margin-top: -542px;
   width: 100%;
-  background-position: 100% 11%;
+  background-position: 101% -2%;
 }
-.abautParagraph {
+.aboutParagraph {
   font-family: "Montserrat", serif;
-
+  letter-spacing: -0.015em;
   font-weight: normal;
   font-size: 16px;
   color: #23242a;
+  line-height: 25px;
 }
+
+// @media (max-width: 1400px) {
+//   .aboutImageLine {
+//     margin-top: -467px;
+
+//     background-position: 101% 3%;
+//   }
+// }
+// @media (max-width: 1200px) {
+//   .aboutImageLine {
+//     margin-top: -467px;
+
+//     background-position: 101% 3%;
+//   }
+// }
+// @media (max-width: 992px) {
+//   .aboutImageLine {
+//     margin-top: -467px;
+
+//     background-position: 101% 3%;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .aboutImageLine {
+//     margin-top: -467px;
+
+//     background-position: 101% 3%;
+//   }
+// }
+// @media (max-width: 576px) {
+//   .aboutImageLine {
+//     margin-top: -467px;
+
+//     background-position: 101% 3%;
+//   }
+// }
