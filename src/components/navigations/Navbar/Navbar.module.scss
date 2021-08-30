@@ -55,7 +55,7 @@
 .navbarList {
   list-style: none;
 }
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .navigationList__wrapper {
     position: absolute;
     width: 100vw;
@@ -67,7 +67,7 @@
     transition: all 0.5s;
   }
   .navbarBtn {
-    visibility: visible ;
+    visibility: visible;
   }
 }
 
