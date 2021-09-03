@@ -97,9 +97,27 @@
     margin-left: 220px;
   }
 }
+@media (max-width: 1625px) {
+  .offerWrapper {
+    height: 1167px;
+  }
+  .offerWrapperLine {
+    background-position: 100% 19%;
+  }
+
+  .offerWrapperLineTwo {
+    background-position: -14% 73%;
+  }
+}
 @media (max-width: 1400px) {
   .offerWrapperLine {
     background-position: 100% 19%;
+  }
+  .offerWrapper {
+    height: 1100px;
+  }
+  .offerWrapperLineTwo {
+    background-position: 0% 66%;
   }
 }
 @media (max-width: 1300px) {
@@ -110,7 +128,7 @@
     background-position: 0% 68%;
   }
   .aboutName {
-    padding-top: 109px;
+    padding-top: 36px;
   }
 }
 @media (max-width: 1200px) {
@@ -129,32 +147,66 @@
   }
   .aboutName {
     padding-top: 49px;
+    margin-left: 220px;
+  }
+
+  .homeParagraph {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .offerWrapper {
+    height: 700px;
+    background-size: 66%;
+  }
+  .offerWrapperLine {
+    height: 966px;
+    background-size: 60%;
+  }
+  .aboutName {
+    padding-top: 49px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .offerWrapperLineTwo {
+    background-position: 42% 63%;
+  }
+
+  .homeParagraph {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 50px;
+    display: block;
+  }
+  .offerWrapper {
+    background-image: none;
+    background-color: #23242a;
   }
 }
 @media (max-width: 768px) {
-  .homeParagraph {
-    margin-left: 54px;
-  }
   .aboutName {
-    display: grid;
-    grid-template-columns: 29%;
     justify-content: center;
     padding-top: -94px;
     margin-top: -86px;
+    margin: 0 auto;
+    text-align: center;
   }
   .homeParagraph {
     margin-top: 20px;
-    margin-bottom: 79px;
-    display: grid;
-    grid-template-columns: 44%;
+    margin-bottom: 75px;
+    margin-left: 54px;
+    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     justify-content: center;
     text-align: justify;
-    margin: 0px;
+    margin: 0px auto;
   }
   .offerWrapperLine {
     background-color: #23242a;
     background-image: url("../../assets/images/line_2.png");
-    height: 100vh;
+    margin-top: 70px;
   }
   .offerWrapperLineTwo {
     background-color: #23242a;

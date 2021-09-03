@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import styles from "./Navbar.module.scss";
 import Logo from "../../../assets/icons/logo.png";
 import { Link } from "react-scroll";
+import menu from "../../../assets/icons/list.svg";
+import closeIcon from "../../../assets/icons/close.svg";
 
 // import { Link as PageLink } from "react-router-dom";
 //import { routes } from "../../../routes/routes";
@@ -12,12 +14,17 @@ const Navbar = () => {
 
   const switchResponsiveMenu = (e) => {
     if (menuVisible) {
-      navRef.current.style.left = "-100%";
+      navRef.current.style.left = "-110%";
     } else {
       navRef.current.style.left = 0;
     }
 
     setMenuVisible((prevState) => !prevState);
+  };
+
+  const closeMenuAfterClick = () => {
+    navRef.current.style.left = "-110%";
+    setMenuVisible(false);
   };
 
   return (
@@ -48,6 +55,7 @@ const Navbar = () => {
             smooth={true}
             offset={0}
             duration={500}
+            onClick={closeMenuAfterClick}
           >
             oferta
           </Link>
@@ -61,6 +69,7 @@ const Navbar = () => {
             smooth={true}
             offset={0}
             duration={500}
+            onClick={closeMenuAfterClick}
           >
             o mnie
           </Link>
@@ -74,14 +83,21 @@ const Navbar = () => {
             smooth={true}
             offset={0}
             duration={500}
+            onClick={closeMenuAfterClick}
           >
             kontakt
           </Link>
         </li>
       </ul>
-      <button className={styles.navbarBtn} onClick={switchResponsiveMenu}>
+      <img
+        src={menuVisible ? closeIcon : menu}
+        alt="menu"
+        className={styles.hamburgerMenu}
+        onClick={switchResponsiveMenu}
+      />
+      {/* <button className={styles.navbarBtn} onClick={switchResponsiveMenu}>
         Menu
-      </button>
+      </button> */}
     </nav>
   );
 };

@@ -3,8 +3,7 @@
   grid-template-columns: 70% 30%;
   position: fixed;
   width: 100%;
-  background-color: #fff;
-  opacity: 0.9;
+
   z-index: 999999999;
 }
 
@@ -36,6 +35,7 @@
   align-self: center;
 }
 
+// Sprawdzic na widokach czy da się usunąc padding i margin 106px
 .imgNavbar {
   padding-top: 20px;
   margin-left: 106px;
@@ -45,15 +45,25 @@
   display: grid;
   justify-content: start;
 }
+
 .imgNavigations {
   display: grid;
   justify-content: start;
 }
-.navbarBtn {
+.hamburgerMenu {
   visibility: hidden;
 }
 .navbarList {
   list-style: none;
+}
+@media (max-width: 1024px) {
+  .navigationWrapper {
+    display: grid;
+    grid-template-columns: 68% 34%;
+  }
+  .imgNavbar {
+    margin-left: 4px;
+  }
 }
 @media (max-width: 768px) {
   .navigationList__wrapper {
@@ -61,13 +71,329 @@
     width: 100vw;
     height: 100vh;
     display: block;
-    background: red;
+    background: #a6263e;
     top: 0;
-    left: -100%;
+    left: -110%;
     transition: all 0.5s;
   }
-  .navbarBtn {
+  .hamburgerMenu {
     visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 480%;
+    left: 4%;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .navigationWrapper {
+    background-color: transparent;
+    z-index: 2;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 33%;
+    left: 11%;
+    cursor: pointer;
+  }
+  .imgNavbar {
+    margin-left: 483px;
+  }
+  .navigationList__wrapper {
+    left: 0px;
+    /* color: rgb(245 222 179); */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: max-content;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    height: 734px;
+  }
+  .naviagtionList__element {
+    color: #fff;
+    font-size: 50px;
+    justify-content: center;
+    font-family: "Gelasio", serif;
+    font-weight: bold;
+  }
+  .navbarList {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 625px) {
+  .navigationWrapper {
+    background-color: transparent;
+    z-index: 2;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 33%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 480%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .navigationList__wrapper {
+    left: 0px;
+    /* color: rgb(245 222 179); */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: max-content;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    height: 734px;
+  }
+  .naviagtionList__element {
+    color: #fff;
+    font-size: 50px;
+    justify-content: center;
+    font-family: "Gelasio", serif;
+    font-weight: bold;
+  }
+  .navbarList {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 560px) {
+  .navigationWrapper {
+    background-color: transparent;
+    z-index: 2;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 33%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .imgNavbar {
+    margin-left: 260px;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 33%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .navigationList__wrapper {
+    left: 0px;
+    /* color: rgb(245 222 179); */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: max-content;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    height: 734px;
+  }
+  .naviagtionList__element {
+    color: #fff;
+    font-size: 50px;
+    justify-content: center;
+    font-family: "Gelasio", serif;
+    font-weight: bold;
+  }
+  .navbarList {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 525px) {
+  .navigationWrapper {
+    background-color: transparent;
+    z-index: 2;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 33%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .imgNavbar {
+    margin-left: 260px;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 33%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .navigationList__wrapper {
+    left: 0px;
+    /* color: rgb(245 222 179); */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: max-content;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    height: 734px;
+  }
+  .naviagtionList__element {
+    color: #fff;
+    font-size: 50px;
+    justify-content: center;
+    font-family: "Gelasio", serif;
+    font-weight: bold;
+  }
+  .navbarList {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 424px) {
+  .imgNavbar {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 120px;
+    padding-left: 0;
+  }
+  .navigationList__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #a6263e;
+    top: 0;
+    left: -110%;
+    transition: all 0.5s;
+  }
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 999999999999;
+    top: 480%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .navigationList__wrapper {
+    left: 0px;
+    /* color: rgb(245 222 179); */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: max-content;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    height: 734px;
+  }
+  .naviagtionList__element {
+    color: #fff;
+    font-size: 50px;
+    justify-content: center;
+    font-family: "Gelasio", serif;
+    font-weight: bold;
+  }
+  .navbarList {
+    padding-top: 10px;
   }
 }
 

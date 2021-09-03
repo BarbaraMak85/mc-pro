@@ -77,9 +77,28 @@
     height: 621px;
   }
 }
+
+@media (max-width: 1300px) {
+  .wrapperContact {
+    background-color: #a6263e;
+    background-image: none;
+  }
+}
 @media (max-width: 768px) {
   .wrapperContact {
     background-color: #a6263e;
     background-image: none;
+  }
+  .contactTitle {
+    margin-left: 20px;
+  }
+  .contactEmail {
+    margin-left: 20px;
+  }
+  .contactAdress {
+    margin-left: 0;
+  }
+  .wrapperContactData {
+    margin-left: 20px;
   }
 }

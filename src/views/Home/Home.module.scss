@@ -26,19 +26,6 @@
   }
 }
 
-@media (max-width: 424px) {
-  .home_image {
-    width: 100vw;
-    background-image: url("../../assets/images/ZdjGł_MCpro.png");
-    background-origin: content-box;
-    background-size: 930px;
-    background-position: -220px -30px;
-    background-repeat: no-repeat;
-    height: 650px;
-    position: absolute;
-  }
-}
-
 .home_content {
   width: 30%;
   padding-top: 400px;
@@ -72,4 +59,136 @@
   letter-spacing: -0.015em;
 
   color: #a6263e;
+}
+@media (max-width: 1024px) {
+  .home_image {
+    width: 100vw;
+    background-image: url("../../assets/images/ZdjGł_MCpro.png");
+    background-origin: content-box;
+    background-size: 207%;
+    background-position: 65% 0%;
+    background-repeat: no-repeat;
+    height: 950px;
+    position: absolute;
+    background-position: -42% 0%;
+    background-size: 132%;
+  }
+  .home_container {
+    background-position: 113% 8%;
+    height: 68vh;
+    background-size: 67%;
+  }
+}
+@media (max-width: 768px) {
+  .home_image {
+    width: 100vw;
+    background-image: url("../../assets/images/ZdjGł_MCpro.png");
+    background-origin: content-box;
+    background-size: 1354px;
+    background-position: -223px -30px;
+    background-repeat: no-repeat;
+    height: 650px;
+    position: absolute;
+    height: 880px;
+    // z-index: 200;
+  }
+  .home_content {
+    width: 74%;
+    padding-top: 891px;
+    margin-left: 0px;
+    text-align: center;
+
+    padding-right: 20px;
+  }
+  .homeParagraph {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .titleHome {
+    margin-left: 0px;
+  }
+  .homeParagraphContact {
+    margin-top: 9px;
+    margin-bottom: 97px;
+    text-align: center;
+  }
+  .home_container {
+    background-position: 101% 8%;
+    height: 1329px;
+  }
+}
+@media (max-width: 540px) {
+  .home_image {
+    width: 100vw;
+    background-image: url("../../assets/images/ZdjGł_MCpro.png");
+    background-origin: content-box;
+    background-size: 930px;
+    background-position: -220px -30px;
+    background-repeat: no-repeat;
+    height: 650px;
+    position: absolute;
+    // z-index: 200;
+  }
+  .home_content {
+    width: 52%;
+    padding-top: 645px;
+    margin-left: 0px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .homeParagraph {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .titleHome {
+    margin-left: 0px;
+  }
+  .homeParagraphContact {
+    margin-top: 9px;
+    margin-bottom: 97px;
+    text-align: center;
+  }
+}
+@media (max-width: 424px) {
+  .home_image {
+    width: 100vw;
+    background-image: url("../../assets/images/ZdjGł_MCpro.png");
+    background-origin: content-box;
+    background-size: 930px;
+    background-position: -220px -30px;
+    background-repeat: no-repeat;
+    height: 650px;
+    position: absolute;
+    // z-index: 200;
+  }
+  .home_content {
+    width: 52%;
+    padding-top: 645px;
+    margin-left: 0px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .homeParagraph {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .titleHome {
+    margin-left: 0px;
+  }
+  .homeParagraphContact {
+    margin-top: 9px;
+    margin-bottom: 97px;
+    text-align: center;
+  }
+  .home_container {
+    height: 154vh;
+  }
 }

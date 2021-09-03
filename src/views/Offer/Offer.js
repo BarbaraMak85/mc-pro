@@ -19,25 +19,31 @@ const Offer = () => {
     arrows: true,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1500,
         settings: {
           arrows: true,
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 1,
-          arrows: true,
-        },
-      },
-      {
-        breakpoint: 576,
+        breakpoint: 1400,
         settings: {
           arrows: true,
           slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
         },
       },
     ],
